@@ -6,7 +6,11 @@ import mainReducer from './reducers';
 import App from './components/App';
 
 const initialState = {
-  bookList: [],
+  bookList: [
+    { title: 'Doctor Thorne', id: Math.floor(Math.random() * 100), category: 'History' },
+    { title: 'From the Earth to the Moon', id: Math.floor(Math.random() * 100), category: 'Sci-Fi' },
+    { title: 'Resurrection', id: Math.floor(Math.random() * 100), category: 'Action' },
+  ],
 };
 
 const store = createStore(mainReducer, initialState);

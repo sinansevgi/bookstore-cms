@@ -1,18 +1,19 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
+import { PropTypes } from 'prop-types';
+import Book from '../components/Book';
 
-function mapStateToProps(state) {
-  return {};
-}
+const BooksList = ({ bookList }) => {
+  const library = bookList.bookList.map((book) => <Book book={book} key={book.id} />);
+  return (
+    <div>
+      {library}
+    </div>
+  );
+};
 
-class BooksList extends Component {
-  render() {
-    return (
-      <div />
-    );
-  }
-}
+BooksList.propTypes = {
+  bookList: PropTypes.instanceOf(Object).isRequired,
+};
 
-export default connect(
-  mapStateToProps,
-)(BooksList);
+export default connect((state) => ({ bookList: state }))(BooksList);

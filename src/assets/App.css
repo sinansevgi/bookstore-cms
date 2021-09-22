@@ -1,3 +1,10 @@
 .App {
   text-align: center;
 }
+
+.book {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 2em;
+  border: solid 1px black;
+}
