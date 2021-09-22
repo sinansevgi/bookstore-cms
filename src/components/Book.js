@@ -1,20 +1,28 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
 
-const Book = ({ book }) => (
+const Book = ({ book, deleteFunc }) => (
   <div className="book">
-    <h3>
-      BOOK NAME :
-      {book.title}
-    </h3>
-    <p>
+    <div>
       ISBN ID :
+      <br />
       {book.id}
-    </p>
-    <p>
+    </div>
+    <div>
+      BOOK NAME :
+      <br />
+      {book.title}
+    </div>
+    <div>
       CATEGORY :
+      <br />
       {book.category}
-    </p>
+    </div>
+    <div>
+      <button type="submit" onClick={() => { deleteFunc(book); }}>
+        Delete Book
+      </button>
+    </div>
   </div>
 );
 Book.propTypes = {
@@ -23,6 +31,8 @@ Book.propTypes = {
     title: PropTypes.string.isRequired,
     category: PropTypes.string.isRequired,
   }).isRequired,
+  deleteFunc: PropTypes.func.isRequired,
+
 };
 
 export default Book;
