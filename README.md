@@ -5,9 +5,28 @@ Simple Bookstore app made with React-Redux
 
 - ReactJS
 - Javascript
-- Big.js
+- Redux
 
-## Getting Started with Create React App
+## Getting Started
+
+In order to run this app on your local enviroment:
+
+- Clone the project on your local machine with the following command.
+
+```bash 
+git clone git@github.com:sinansevgi/bookstore-cms.git
+```
+
+- Navigate to the project directory 
+- Run following command to install dependencies
+```bash 
+npm install 
+```
+- You can run the app with the following command.
+```bash 
+npm run start
+```
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
