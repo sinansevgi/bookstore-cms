@@ -11,6 +11,7 @@ const initialState = {
     { title: 'From the Earth to the Moon', id: Math.floor(Math.random() * 100), category: 'Sci-Fi' },
     { title: 'Resurrection', id: Math.floor(Math.random() * 100), category: 'Action' },
   ],
+  filter: 'All',
 };
 
 const store = createStore(mainReducer, initialState);
