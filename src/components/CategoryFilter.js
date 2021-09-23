@@ -16,6 +16,7 @@ const CategoryFilter = ({ handleFilterChange }) => {
   };
   return (
     <div>
+      Filter by Category:
       <select onChange={handleChange}>
         {dropdownOptions}
       </select>
