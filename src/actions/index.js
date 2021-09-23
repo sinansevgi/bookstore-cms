@@ -8,7 +8,13 @@ const REMOVE_BOOK = (data) => ({
   payload: data,
 });
 
+const CHANGE_FILTER = (category) => ({
+  type: 'CHANGE_FILTER',
+  payload: category,
+});
+
 export {
   CREATE_BOOK,
   REMOVE_BOOK,
+  CHANGE_FILTER,
 };
