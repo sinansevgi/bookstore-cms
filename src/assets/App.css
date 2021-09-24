@@ -1,3 +1,11 @@
+:root {
+  --color-dark: #121212;
+  --roboto-thin: 300 0.875rem "Roboto Slab", serif;
+  --border-white: 1px solid #e8e8e8;
+  --roboto-bold: 700 1.375rem "Roboto Slab", serif;
+  --montserrat-bold: 700 0.875rem "Montserrat", sans-serif;
+}
+
 .App {
   padding: 4%;
   background-color: #fafafa;
@@ -9,7 +17,7 @@
   grid-template-columns: 2fr 1fr 1fr;
   background-color: #fff;
   border-radius: 4px;
-  border: 1px solid #e8e8e8;
+  border: var(--border-white);
   padding: 2rem;
   margin-bottom: 0.938rem;
 }
@@ -26,21 +34,21 @@
 }
 
 .book-info h5 {
-  font: 700 0.875rem "Montserrat", sans-serif;
-  color: #121212;
+  font: var(--montserrat-bold);
+  color: var(--color-dark);
   opacity: 0.5;
   margin-bottom: 0.5rem;
 }
 
 .book-info h2 {
-  font: 700 1.375rem "Roboto Slab", serif;
+  font: var(--roboto-bold);
   margin-bottom: 0.2rem;
   letter-spacing: -0.2px;
-  color: #121212;
+  color: var(--color-dark);
 }
 
 .book-info h6 {
-  font: 300 0.875rem "Roboto Slab", serif;
+  font: var(--roboto-thin);
   margin-top: 0.1rem;
   color: #4386bf;
 }
@@ -52,7 +60,7 @@
 }
 
 .book-button {
-  font: 300 0.875rem "Roboto Slab", serif;
+  font: var(--roboto-thin);
   background-color: transparent;
   border: none;
   color: #4386bf;
@@ -83,7 +91,7 @@
 
 .progress-info {
   font: 2rem "Montserrat", sans-serif;
-  color: #121212;
+  color: var(--color-dark);
   margin: 1em;
 }
 
@@ -99,9 +107,8 @@
   justify-content: space-between;
   padding-left: 2em;
   border-left: 2px solid #e8e8e8;
-  font-family: "Roboto Slab", serif;
-  font-weight: 300;
-  color: #121212;
+  font: var(--roboto-thin);
+  color: var(--color-dark);
 }
 
 .chapter-title {
@@ -121,15 +128,14 @@
   background-color: #0290ff;
   border-radius: 3px;
   padding: 8px 24px;
-  font-family: "Roboto Slab", serif;
-  font-weight: 300;
-  letter-spacing: 0.5px;
+  font: var(--roboto-thin);
+  letter-spacing: 1px;
   color: #fff;
 }
 
 .form-container {
-  margin-top: 2rem;
-  border-top: 0 solid #e8e8e8;
+  margin-top: 3rem;
+  border-top: 2px solid #e8e8e8;
   padding-top: 2rem;
 }
 
@@ -150,11 +156,11 @@
 #bookForm select {
   padding: 12px;
   border-radius: 4px;
-  border: 1px solid #e8e8e8;
+  border: var(--border-white);
   background-color: #fff;
   font-size: 1rem;
   letter-spacing: -0.15px;
-  color: #121212;
+  color: var(--color-dark);
 }
 
 #bookForm button {
