@@ -1,0 +1,48 @@
+.logo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #0290ff;
+}
+
+.navbar {
+  padding: 24px 4%;
+  background-color: white;
+  border-bottom: solid 1px #e8e8e8;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.navbar ul {
+  display: flex;
+  flex-grow: 1;
+  list-style-type: none;
+  gap: 40px;
+}
+
+.navbar li {
+  opacity: 0.5;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.813rem;
+  color: #121212;
+  letter-spacing: 1.9px;
+}
+
+.navbar li:first-child {
+  opacity: 1;
+}
+
+a {
+  text-decoration: none;
+  color: #121212;
+}
+
+#social-link {
+  cursor: pointer;
+  padding: 0.6rem;
+  border-radius: 50%;
+  border: 1px solid #e8e8e8;
+  background-color: #fff;
+  color: #0290ff;
+}
