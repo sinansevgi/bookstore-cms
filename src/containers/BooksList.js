@@ -26,7 +26,9 @@ const BooksList = ({
   return (
     <div>
       {library}
-      <CategoryFilter handleFilterChange={handleFilterChange} />
+      <div className="hidden">
+        <CategoryFilter handleFilterChange={handleFilterChange} />
+      </div>
     </div>
   );
 };
