@@ -32,19 +32,22 @@ const BooksForm = ({ submitBook }) => {
     setNewBook({
       title: '',
       category: 'Action',
-      id: Math.floor(Math.random() * 1000),
+      id: Math.floor(Math.random() * 100),
     });
     document.getElementById('bookForm').reset();
   };
 
   return (
-    <form action="" id="bookForm">
-      <input type="text" name="title" placeholder="Book Name" onChange={handleChange} />
-      <select id="categories" name="category" onChange={handleChange}>
-        {dropdownOptions}
-      </select>
-      <button type="submit" onClick={handleSubmit}>Add Book</button>
-    </form>
+    <div className="form-container">
+      <h2>ADD NEW BOOK</h2>
+      <form action="" id="bookForm">
+        <input type="text" name="title" placeholder="Book Name" onChange={handleChange} />
+        <select id="categories" name="category" onChange={handleChange}>
+          {dropdownOptions}
+        </select>
+        <button type="submit" className="progress-button" onClick={handleSubmit}>ADD BOOK</button>
+      </form>
+    </div>
   );
 };
 

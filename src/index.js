@@ -4,6 +4,8 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import mainReducer from './reducers';
 import App from './components/App';
+import Navbar from './components/Navbar';
+import './assets/index.css';
 
 const initialState = {
   bookList: [
@@ -19,6 +21,7 @@ const store = createStore(mainReducer, initialState);
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
+      <Navbar />
       <App />
     </Provider>
   </React.StrictMode>,
